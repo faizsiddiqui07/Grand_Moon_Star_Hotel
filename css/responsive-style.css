@@ -25,7 +25,25 @@
     .room-items .room-content p{
         font-size: 0.75rem;
     }
-    
+    .service-item-wrap .tab-content img{
+        width: 100%;
+    }
+    .service-item-wrap ul li a{
+        margin-bottom: 0.8125rem;
+        overflow: hidden;
+    }
+    .service-item-wrap ul li:nth-child(1){
+        margin-left: -4.4375rem;
+    }
+    .service-item-wrap ul li:nth-child(2){
+        margin-left: -6.9375rem;
+    }
+    .service-item-wrap ul li:nth-child(3){
+        margin-left: -9.375rem;
+    }
+    .service-item-wrap ul li:nth-child(4){
+        margin-left: -12.8125rem;
+    }
 }
 
 
@@ -61,6 +79,12 @@
     }
     .room-items .room-content p{
         font-size: 1rem;
+    }
+    .service-menu-area{
+        padding: 1.5rem 0.5rem;
+    }
+    .service-menu-area ul li{
+        margin-left: unset !important;
     }
 
 }
