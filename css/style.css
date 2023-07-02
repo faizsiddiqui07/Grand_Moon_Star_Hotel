@@ -456,3 +456,44 @@ p{
     opacity: 1;
     left: 0;
 }
+.price_wrapper .card{
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.price_wrapper .card:hover{
+    background-color: var(--secondry-color);
+    border-color: var(--secondry-color);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.price_wrapper .card:hover h3,
+.price_wrapper .card:hover h5,
+.price_wrapper .card:hover p{
+    color: var(--text-white);
+}
+.price_wrapper .card:hover .main-btn{
+    color: var(--text-white);
+    border-color: var(--bg-white);
+}
+.blog_wrapper .blog-content{
+    margin: -5rem 0 0 4.375rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.our-partner-slider{
+    background-color: var(--bg-color);
+    padding: 2rem 0;
+}
+.footer_wrapper{
+    background-color: var(--bg-black);
+}
+.footer_wrapper h5{
+    color: var(--text-white);
+    margin-bottom: 1.25rem;
+}
+.footer_wrapper ul li{
+    margin-bottom: 0.5rem;
+    list-style: none;
+}
+.footer_wrapper .link-widget li a{
+    color: var(--secondry-color);
+}
