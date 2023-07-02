@@ -144,7 +144,7 @@ p{
     left: 0;
     top: 0;
     width: 100%;
-    z-index: 9999;
+    z-index: 99999999;
     background-color: rgba(225, 225, 225, 0.85);
     -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
     animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
@@ -214,7 +214,7 @@ p{
     margin-top: -4rem;
     padding: 3.125rem 1.875rem;
     position: relative;
-    z-index: 9999999;
+    z-index: 99999;
 }
 .booking-area .form-control,
 .booking-area .form-select{
@@ -495,5 +495,59 @@ p{
     list-style: none;
 }
 .footer_wrapper .link-widget li a{
+    color: var(--secondry-color);
+}
+.footer_wrapper .link-widget li a,
+.footer_wrapper p{
+    color: var(--text-gray);
+    font-size: 0.875rem;
+    padding-left: 1.5rem;
+    position: relative;
+    transition: all 0.3s ease-out;
+}
+.footer_wrapper .link-widget li a:before{
+    content: '\f105';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0.3rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.footer_wrapper .link-widget li a:hover{
+    color: var(--secondry-color);
+    margin-left: 0.625rem;
+}
+.footer_wrapper .social-network a{
+    width: 2.1875rem;
+    height: 2.1875rem;
+    margin: 0.5rem;
+    line-height: 2rem;
+    font-size: 0.875rem;
+    display: inline-block;
+    border: 0.125rem solid var(--text-gray);
+    color: var(--text-gray);
+    text-align: center;
+    border-radius: 100%;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355 1);
+}
+.footer_wrapper .social-network a:hover{
+    background-color: var(--secondry-color);
+    border-color: var(--secondry-color);
+    color: var(--text-white);
+    transform: translateY(-0.1875rem);
+    box-shadow: 0 0.625rem 0.9375rem 0 rgb(0, 0, 0 / 10%);
+}
+.footer_wrapper .form-control:focus{
+    outline: none;
+    box-shadow: none;
+    border-color: var(--secondry-color);
+}
+.footer_wrapper .copyright-section{
+    background-color: var(--primary-color);
+    padding: 1.25rem 0 0.3125rem;
+    text-align: center;
+}
+.footer_wrapper .copyright-section a{
     color: var(--secondry-color);
 }
